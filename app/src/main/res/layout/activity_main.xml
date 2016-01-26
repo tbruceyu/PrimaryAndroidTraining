@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2016 Baidu, Inc. All Rights Reserved.
+  -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/bt_to_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start activity" />
+    <Button
+        android:id="@+id/bt_bind_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bt_to_second"
+        android:text="Local Service" />
+    <Button
+        android:id="@+id/bt_send_broadcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bt_bind_service"
+        android:text="Broadcast"/>
+    <Button
+        android:id="@+id/bt_bind_remote_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_to_second"
+        android:text="Bind remote" />
+    <Button
+        android:id="@+id/bt_start_network_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_bind_service"
+        android:layout_toRightOf="@id/bt_bind_remote_service"
+        android:text="Remote request" />
+    <Button
+        android:id="@+id/bt_intent_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_bind_service"
+        android:layout_toRightOf="@id/bt_start_network_request"
+        android:text="Intent Test" />
+    <Button
+        android:id="@+id/bt_get_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_bind_remote_service"
+        android:text="Get Contact" />
+</RelativeLayout>
